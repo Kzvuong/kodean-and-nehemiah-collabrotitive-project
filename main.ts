@@ -32,4 +32,5 @@ let mySprite = sprites.create(img`
     .........fffffffcccccee.........
     ................................
     `, SpriteKind.Player)
-controller.moveSprite(mySprite)
+controller.moveSprite(mySprite, 100, 100)
+game.splash("meat")
