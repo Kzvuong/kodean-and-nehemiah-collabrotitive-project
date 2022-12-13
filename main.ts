@@ -1,5 +1,6 @@
-let burger: Sprite = null
-let monkey = sprites.create(img`
+let Bad_Guy: Sprite = null
+scene.setBackgroundColor(1)
+let Person = sprites.create(img`
     . f f f . 
     . f f f . 
     . f f f . 
@@ -11,9 +12,9 @@ let monkey = sprites.create(img`
     . f . f . 
     f . . . f 
     `, SpriteKind.Player)
-controller.moveSprite(monkey)
+controller.moveSprite(Person)
 game.onUpdateInterval(500, function () {
-    burger = sprites.create(img`
+    Bad_Guy = sprites.create(img`
         . 2 2 2 . 
         . 2 2 2 . 
         . 2 2 2 . 
